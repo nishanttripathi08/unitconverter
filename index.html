@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-$END$
+    <h1>Unit Converter</h1>
+    <div class="tab-container">
+        <div class="tab">
+            <button class="tablinks">Length</button>
+        </div>
+        <div class="tab">
+            <button class="tablinks">Weight</button>
+        </div>
+        <div class="tab">
+            <button class="tablinks">Temperature</button>
+        </div>
+    </div>
+
+    <form action="/submit">
+        <label for="amountOfUnit">Enter the length to covert</label><br>
+        <input type="text" id="amountOfUnit" name="amountOfUnit"><br>
+        <label for="convertFrom">Unit to Convert from</label>
+        <div>
+            <select name="convertFrom" id="convertFrom">
+                <option value="Millimeter">Millimeter</option>
+                <option value="Centimeter">Centimeter</option>
+                <option value="Meter">Meter</option>
+                <option value="Kilometer">Kilometer</option>
+                <option value="Inch">Inch</option>
+                <option value="Foot">Foot</option>
+                <option value="Yard">Yard</option>
+                <option value="Mile">Mile</option>
+            </select>
+        </div>
+        <label for="convertTo">Unit to Convert from</label>
+        <div>
+            <select name="convertTo" id="convertTo">
+                <option value="Millimeter">Millimeter</option>
+                <option value="Centimeter">Centimeter</option>
+                <option value="Meter">Meter</option>
+                <option value="Kilometer">Kilometer</option>
+                <option value="Inch">Inch</option>
+                <option value="Foot">Foot</option>
+                <option value="Yard">Yard</option>
+                <option value="Mile">Mile</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
 </body>
 </html>
