@@ -19,11 +19,10 @@
             <button class="tablinks" id="temperatureButton">Temperature</button>
         </div>
     </div>
-
-    <form action="/submit">
-        <label for="amountOfUnit">Enter the length to covert</label><br>
+    <form>
+        <label for="amountOfUnit" id="amountOfUnitLabel">Enter the length to covert</label><br>
         <input type="text" id="amountOfUnit" name="amountOfUnit"><br>
-        <label for="convertFrom">Unit to Convert from</label>
+        <label for="convertFrom" id="convertFromLabel">Unit to Convert from</label>
         <div>
             <select name="convertFrom" id="convertFrom">
                 <option value="Millimeter">Millimeter</option>
@@ -36,7 +35,7 @@
                 <option value="Mile">Mile</option>
             </select>
         </div>
-        <label for="convertTo">Unit to Convert from</label>
+        <label for="convertTo" id="convertToLabel">Unit to Convert to</label>
         <div>
             <select name="convertTo" id="convertTo">
                 <option value="Millimeter">Millimeter</option>
@@ -49,8 +48,10 @@
                 <option value="Mile">Mile</option>
             </select>
         </div>
-        <input type="submit" value="Submit">
     </form>
-
+    <button type="button" id="convert" onclick="convert()">Convert</button>
+    <p id="resultLabel" hidden>Result of your calculation</p>
+    <p id="result"></p>
+    <button type="button" id="reset" onclick="reset()" hidden>Reset</button>
 </body>
 </html>

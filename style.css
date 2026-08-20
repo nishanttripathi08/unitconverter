@@ -1,4 +1,11 @@
+* {
+    margin: 10px 0;
+    font-weight: bold;
+}
 
+#convertTo, #convertFrom, #amountOfUnit {
+    outline: 2px solid black;
+}
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -13,12 +20,13 @@
 }
 
 .tab button {
-    background-color: inherit;
-    float: left;
     border: none;
     outline: none;
+    margin: 0px;
+    padding: 10px 30px;
+    background-color: white;
+    float: left;
     cursor: pointer;
-    padding: 14px 16px;
     transition: 0.3s;
 }
 
